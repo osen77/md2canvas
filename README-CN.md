@@ -11,6 +11,9 @@
 - 为各种 Markdown 元素（包括 blockquote）应用自定义样式。
 - 使用 Docker 容器化，便于部署和环境一致性。
 
+## 示例
+![Example](example/image.png)
+
 ## 项目结构
 
 ```

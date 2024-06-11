@@ -11,6 +11,9 @@ This project is a Node.js application that converts Markdown content into an ima
 - Custom styles for various Markdown elements including blockquotes.
 - Dockerized for easy deployment and consistent environment.
 
+## Exemplary
+![Example](example/image.png)
+
 ## Project Structure
 
 ```
