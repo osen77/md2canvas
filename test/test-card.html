@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rendered Markdown</title>
+  <style>
+    body { background-color: yellow; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .card { background: white; padding: 20px; border-radius: 10px; width: 90%; max-width: 800px; }
+    .header { display: flex; align-items: center; }
+    .header img { border-radius: 50%; width: 50px; height: 50px; }
+    .header h1 { margin-left: 10px; font-size: 1.2em; }
+    .content { margin-top: 20px; }
+    .content img { max-width: 100%; height: auto; }
+    .qr-code { margin-top: 20px; text-align: center; }
+    .qr-code img { max-width: 100%; height: auto; }
+    .logo { margin-top: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="card" id="capture">
+    <div class="header">
+      <img src="https://blog.osen.design/_next/image?url=%2Flogo-blog.png&w=96&q=75" alt="Avatar">
+      <h1>标题</h1>
+    </div>
+    <div class="content">
+      <h1>Hello World</h1>
+<p>This is a sample markdown content.</p>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2<mark>2</mark></li>
+</ul>
+<p><mark>高亮文本</mark></p>
+
+      
+        <img src="https://pbs.twimg.com/ext_tw_video_thumb/1781168334861455361/pu/img/o2NXanu-1O2zfLbb.jpg" alt="Markdown Image">
+      
+    </div>
+    <div class="qr-code">
+      <img src="https://zuolan.me/_next/image?url=%2Fwechat-pay.png&w=640&q=75" alt="QR Code">
+    </div>
+    <div class="logo">
+      <img src="https://blog.osen.design/_next/image?url=%2Flogo-blog.png&w=96&q=75" alt="Logo">
+    </div>
+  </div>
+</body>
+</html>

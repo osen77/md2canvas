@@ -1,0 +1,20 @@
+{
+  "name": "md2canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./styles/main.css -o ./public/css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "markdown-it": "^14.1.0",
+    "markdown-it-mark": "^4.0.0",
+    "puppeteer": "^22.10.0"
+  }
+}

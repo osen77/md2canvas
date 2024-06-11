@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preview</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* @font-face {
+      font-family: 'Smiley Sans';
+      src: url('/fonts/SmileySans.otf') format('opentype');
+    } 引用字体，但在动态html中不适用，会放在缓存中*/
+
+    body {
+      font-family: 'Noto Serif SC', 'Source Han Serif SC VF', 'Source Han Serif SC VF', serif;
+      font-weight: 400; 
+      line-height: 1.9 !important;
+    }
+
+    h1 {
+      font-size: 44px !important;
+      text-align: left;
+      color: #000;
+      font-family: 'Smiley Sans', sans-serif;
+      line-height: 1.2;
+      padding-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 20px !important;
+      font-weight: bold !important;
+      padding-top: 10px;
+    }
+
+    img {
+      flex-grow: 0;
+      flex-shrink: 0;
+      border-radius: 8px;
+      border-width: 0.5px;
+      border-color: rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 14px 64px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    p {
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc !important;
+      padding-left: 18px !important;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ol {
+      list-style-type: decimal !important;
+      padding-left: 20px !important;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+    }
+
+    ul li::marker,
+    ol li::marker {
+      color: #059669;
+      font-family: 'Smiley Sans';
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    mark {
+      background-color: #77e37e;
+    }
+
+    blockquote {
+        border-left: 4px solid #c6c7bc;
+        padding-left: 16px;
+        color: #7b7c75;
+        margin: 0 0 14px 0 !important;
+    }
+
+    blockquote p {
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 746px) {
+      body {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex flex-col justify-start items-start w-[375px] relative gap-0 px-[30px] py-4 bg-[#e6e9da]">
+      <p style="font-size: 14px; color:#909090">
+        <%= date %>
+      </p>
+    <div id="content">
+      <%- htmlContent %>
+      <% if (imageUrl) { %>
+        <img src="<%= imageUrl %>" alt="Markdown Image">
+      <% } %>
+    </div>
+    <div id="footer" class="flex justify-between items-end self-stretch pt-6">
+      <img style="border: none; box-shadow: none; height: 39px;" src="<%= logo_img %>"/>
+      <div class="flex flex-col items-center gap-0.5">
+        <p class="opacity-60 text-[10px] pb-0">扫码看原文</p>
+        <img style="border: none; box-shadow: none; height: 64px;" src="<%= qrcode_img %>"/>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

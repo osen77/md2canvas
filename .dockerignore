@@ -1,0 +1,10 @@
+# 忽略文件夹及其子目录
+node_modules/
+tests/
+data/
+tests-examples/
+/test-results/
+
+# 其他
+.gitignore
+.DS_Store
